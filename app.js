@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("Hello from AWS CI/CD");
+  res.send("Hello from AWS newCI/CD");
 });
 
 app.get("/health", (req, res) => {
