@@ -1,0 +1,18 @@
+version: 0.0
+
+os: linux
+
+files:
+  - source: /
+    destination: /home/ubuntu/node-app
+
+hooks:
+
+  ApplicationStop:
+    - location: scripts/application_stop.sh
+
+  BeforeInstall:
+    - location: scripts/before_install.sh
+
+  ApplicationStart:
+    - location: scripts/application_start.sh
